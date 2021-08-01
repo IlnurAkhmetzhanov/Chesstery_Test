@@ -1,0 +1,25 @@
+.wrapper{
+    display:grid;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+.wrapper div{
+    display:grid;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+
+    align-items: center;
+    text-align: center;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+}
+.number{
+
+}

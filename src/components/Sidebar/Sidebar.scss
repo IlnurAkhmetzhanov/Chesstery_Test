@@ -1,0 +1,325 @@
+$sidebar-breakpoint: 5100px;
+$main-blue-color: #235390;
+$main-orange-color: #f27c39;
+@import './Sidebar.media.scss';
+
+.Sidebar {
+  background-color: #fff;
+  $width: 172px;
+  width: $width;
+  height: 100vh;
+  // height: calc(var(--vh, 1vh) * 100);
+  $left_right_padding: 8px;
+  padding: 0 8px;
+  position: relative;
+  display: flex;
+  min-height: -webkit-fill-available;
+
+  &:focus {
+    outline: none;
+  }
+
+  &-outer-wrapper {
+    position: relative;
+  }
+
+  &-wrapper {
+    width: calc(#{$width} - 2 * #{$left_right_padding});
+  }
+
+  &-divider {
+    width: calc(100% + 2 * #{$left_right_padding});
+    height: 4px;
+    margin-left: -1 * $left_right_padding;
+    background-color: #efefef;
+
+    filter: blur(3px);
+
+    &.divider--right {
+      width: 4px;
+      height: 100vh;
+
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  &__icon {
+    margin-right: 15px;
+    margin-left: 5px;
+    height: 28px;
+    width: 28px;
+
+    &.margin--no {
+      margin-left: 0;
+    }
+  }
+
+  .item {
+    &--ellipsis {
+      text-overflow: ellipsis;
+      display: -webkit-box !important;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-left: 50px;
+    }
+    &--course {
+      width: 18px;
+      height: 18px;
+    }
+
+    &--premium {
+      margin-top: 5px;
+      background: #ff127f;
+    }
+
+    &--fixed {
+      min-height: 40px;
+    }
+
+    &--wrapper {
+      border-radius: 15px;
+      padding: 5px;
+    }
+
+    &--hover:hover {
+      background: #f5e6fe;
+    }
+
+    &--text {
+      font-family: 'Nunito';
+      font-style: normal;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+
+      color: $main-blue-color;
+
+      &.text--premium {
+        color: #fff;
+      }
+    }
+  }
+
+  &__logo-image {
+    // margin-right: 15px;
+    margin-left: 5px;
+    height: 28px;
+    width: 137px;
+
+    margin-top: 20px;
+    margin-bottom: 14px;
+  }
+
+  &__account {
+    &-energy.subscription--premium {
+      font-family: 'Nunito';
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 30px;
+    }
+
+    &-list {
+      margin-top: 14px;
+      margin-bottom: 9px;
+      width: 100%;
+
+      & .item--wrapper {
+        background: #f1fcff;
+      }
+    }
+
+    &-item {
+      display: flex;
+      position: relative !important;
+      margin-bottom: 9px;
+
+      &.tooltip-active--true {
+        position: absolute;
+        width: calc(100% + 10px);
+        z-index: 1301;
+        background-color: #f1fcff;
+        border-radius: 15px;
+        padding: 5px;
+        margin-left: -5px;
+
+        margin-top: -5px;
+        margin-bottom: 4px;
+
+        @media (max-width: 1099px) {
+          background-color: #bbf0ff;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2).tooltip-active--true {
+        margin-bottom: -5px;
+        margin-top: -5px;
+      }
+
+      .account-image {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        border-radius: 50%;
+      }
+    }
+
+    &-name {
+      $accountImageWidth: 28px;
+      $left_margin: 15px;
+      margin-left: calc(#{$accountImageWidth} + #{$left_margin});
+      text-overflow: ellipsis;
+      max-width: 100px;
+      max-height: 40px;
+    }
+  }
+
+  &__navigation {
+    &-list {
+      margin-top: 22px;
+    }
+
+    &-item {
+      display: flex;
+      margin-bottom: 5px;
+      position: relative !important;
+
+      &.margin-b--no {
+        margin-bottom: 0;
+      }
+
+      &--active {
+        background: #f5e6fe;
+        border-radius: 15px;
+      }
+
+      &.tooltip-active--true {
+        position: absolute;
+        width: 100%;
+        z-index: 99999;
+        background-color: #f5e6fe;
+        @media (max-width: 1099px) {
+          background-color: #dce8ff;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    &-wrapper {
+      position: absolute;
+      bottom: 0;
+      width: calc(100% - 2 * #{$left_right_padding});
+      margin-bottom: 14px;
+    }
+
+    &-item {
+      display: flex;
+      margin-bottom: 5px;
+
+      & .arrow--true {
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+
+      &:last-child:not(.item--margin-b) {
+        margin-bottom: 0;
+      }
+
+      & .image-wrapper {
+        background-color: #f5e6fe;
+        position: relative;
+
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+
+        &.color {
+          &--blue {
+            background-color: #e6f5fe;
+          }
+
+          &--red {
+            background-color: #b90c15;
+          }
+
+          &--purple {
+            background-color: #6939cf;
+          }
+
+          &--teal {
+            background-color: #1b3c66;
+          }
+        }
+      }
+
+      & img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      & p {
+        margin-left: 15px;
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        color: #ff0000;
+
+        color: $main-blue-color;
+      }
+    }
+  }
+
+  &__sign-list {
+    margin-top: 5px;
+
+    .Sidebar__bottom-item {
+      margin-bottom: 9px;
+    }
+
+    & > li:hover {
+      cursor: pointer;
+    }
+
+    &.item--wrapper {
+      background-color: #c0ffe4;
+    }
+  }
+
+  &--closed {
+    $closedWidth: 54px;
+    max-width: $closedWidth;
+
+    .item--text {
+      display: none;
+    }
+
+    .Sidebar__navigation-list,
+    .Sidebar__account-list {
+      max-width: calc(#{$closedWidth} - 16px);
+    }
+
+    .Sidebar__logo-image {
+      width: 27px;
+    }
+
+    .item--premium .Sidebar__icon {
+      margin-right: 0;
+    }
+  }
+}
+
+

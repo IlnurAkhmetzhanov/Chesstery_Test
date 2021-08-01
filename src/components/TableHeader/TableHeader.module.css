@@ -1,0 +1,21 @@
+.wrapper{
+    display:grid;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background: #F1FCFF;
+    border-radius: 20px 20px 0px 0px;
+}
+.wrapper div{
+    display:grid;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    align-items: center;
+    text-align: center;
+    color: #235390;
+
+}
+.number{
+
+}

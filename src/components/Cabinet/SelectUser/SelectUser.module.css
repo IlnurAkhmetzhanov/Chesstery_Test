@@ -1,0 +1,22 @@
+.wrapper{
+display:flex;
+}
+
+.name{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Gray 2 */
+
+    color: #4F4F4F;
+
+}
+.icon{
+    display:flex;
+}

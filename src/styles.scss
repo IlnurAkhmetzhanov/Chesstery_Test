@@ -1,0 +1,108 @@
+.App {
+  min-height: 100vh;
+  max-height: calc(100vh - 70px);
+  font-family: "Nunito";
+  display: flex;
+  flex-direction: column;
+
+  &__personal-account-container {
+    background-color: #ffffff;
+    position: relative;
+    height: 100%;
+    flex-grow: 1;
+    max-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__personalaccount-wrapper {
+    width: 100%;
+    margin-left: 15px;
+    min-height: 100vh;
+    overflow: auto;
+    padding-right: 5px;
+
+    &.non-auth {
+      margin-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 1099px) {
+    &__personalaccount-wrapper {
+      margin-left: 65px;
+
+      &.non-auth {
+        margin-left: 50px;
+      }
+    }
+  }
+
+  @media (max-width: 959px) {
+    &__personalaccount-wrapper {
+      padding-top: 48px;
+      margin-left: 5px;
+
+      &.non-auth {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__personalaccount-wrapper {
+      margin-left: 0;
+    }
+  }
+}
+
+.nav-link-reset {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@media(min-width: 1000px) {
+  *::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #F5F5F5;
+      border-radius: 10px;
+  }
+  
+  *::-webkit-scrollbar {
+      width: 10px;
+      background-color: #F5F5F5;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgb(122, 153, 217)), color-stop(0.72, rgb(73, 125, 189)), color-stop(0.86, rgb(28, 58, 148)));
+  }
+}

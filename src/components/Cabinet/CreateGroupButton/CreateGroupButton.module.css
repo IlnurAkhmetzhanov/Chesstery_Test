@@ -1,0 +1,32 @@
+.wrapper{
+  width: 184px;
+  height: 43px;
+  display:grid;
+  grid-template-columns:1fr 7fr  ;
+  border: 2px solid #C200AF;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+
+
+}
+.title{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    display: grid;
+    align-items: center;
+    margin-left: 10px;
+
+
+    color: #C200AF;
+
+
+ }
+.icon{
+  display:grid;
+  align-items: center;
+  text-align: center;
+}

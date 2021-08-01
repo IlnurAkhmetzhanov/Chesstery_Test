@@ -1,0 +1,30 @@
+.wrapper{
+  width: 184px;
+  height: 43px;
+  display:grid;
+  grid-template-columns:1fr 15fr  ;
+  border: 2px solid #235390;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+
+
+}
+.title{
+   display:grid;
+   font-family: Nunito;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 15px;
+   line-height: 20px;
+   color: #235390;
+  align-items: center;
+    margin-left: 10px;
+
+
+ }
+.icon{
+  display:grid;
+  align-items: center;
+  text-align: center;
+}

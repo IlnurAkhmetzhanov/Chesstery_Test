@@ -1,0 +1,73 @@
+.wrapper{
+
+
+  }
+
+.topHeading{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  /* Button 1 */
+
+  color: #235390;
+
+}
+.sectionName {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 40px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.bottomHeading{
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  display: grid;
+  align-items: center;
+grid-template-columns: 8fr 1fr;
+
+  /* Button 1 */
+
+  color: #235390;
+
+}
+
+.leftHeading h4{
+  margin-left:5px
+}
+.leftHeading{
+  display:grid;
+  width: 198px;
+  height: 25px;
+  left: 232px;
+  top: 311px;
+  grid-template-columns: 1fr 1fr;
+}
+.rightHeading{
+  display:grid;
+}
+.control{
+  display: grid;
+  grid-template-columns: 2fr 13fr;
+
+}
+.control bottoms{
+  display: grid;
+}
+.control UsersList{
+  display:grid;
+}
