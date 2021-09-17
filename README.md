@@ -1,6 +1,6 @@
 # Приложение "ChessteryTest" является в качестве тестового задания в компанию "LLC Chesstery"
 
-Основной стек: TypeScript, React, Redux, Redux-thunk, React-redux, SCSS, БЭМ.
+Основной стек: JavaScript, React, Redux, Redux-thunk, React-redux, CSS, БЭМ.
 
 Чтобы запустить проект, необходимо ввести:
 
