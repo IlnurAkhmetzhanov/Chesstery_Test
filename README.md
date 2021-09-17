@@ -1,4 +1,4 @@
-# Приложение "ChessteryTest" является в качестве тестового задания в компанию "LLC Chesstery"
+# Приложение "ChessteryTest" выполнено в качестве тестового задания для компании "LLC Chesstery"
 
 Основной стек: JavaScript, React, Redux, Redux-thunk, React-redux, CSS, БЭМ.
 
